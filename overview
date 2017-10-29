@@ -1,0 +1,55 @@
+overview
+
+pieces.py:
+need a class per piece, or could represent them as strings? what to keep track per piece:
+
+-game class:
+	-has two Player() objects, and a Board() object
+	-whose current turn
+	-moves counter
+	-returns new board state to main
+
+-main class:
+	-repl
+	-printing stuff
+	-parsing command and passing to game
+
+-Player class:
+	-in check
+	-droppable pieces
+	- ??
+
+-Board class:
+	-move functions
+	-check if check
+	-has board state
+	-check if legal move
+
+	-checks
+	-checkmates
+	-captures
+	-promotion
+	-illegal
+	-drop
+
+	-for every move:
+	check if legal move
+	 make the move, check if check for self, if so then lose game, then check if check for enemy, in which case print special message. 
+	-What about checkmate?
+
+
+check_legal_move:
+	-find piece
+	-find if movement is in range of the piece's movement
+		-might be blocked
+
+
+move d1 c2
+move d5 c4
+move c1 d2
+move c4 b4
+move d2 d3
+move b4 a4
+move d3 c4
+move a4 a3
+move e1 e4
